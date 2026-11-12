@@ -1,3 +1,98 @@
-﻿body
-{
+﻿/* GL Dining - custom styles (on top of Bootstrap)
+   Colors and fonts come from our Figma style guide*/
+
+/* 1. DESIGN SYSTEM */
+:root {
+  --gl-brown: #2E2420;     /* headings, nav, footer */
+  --gl-cream: #FBF6EE;     /* page background */
+  --gl-offwhite: #FFFDFA;  /* forms and content sections */
+  --gl-gray: #666666;      /* body text */
+  --gl-blu: #3677BA;       /* blu accent */
+  --gl-library: #5F0519;   /* The Library accent */
+}
+
+/* 2. PAGE / BODY */
+body {
+  background-color: var(--gl-cream);
+  color: var(--gl-gray);
+  font-family: "Inter", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3 {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 700;
+  color: var(--gl-brown);
+}
+
+/* 3. NAVIGATION */
+.gl-navbar {
+  background-color: var(--gl-brown);
+}
+
+.gl-navbar .navbar-brand {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+.gl-navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.gl-navbar .nav-link:hover {
+  color: var(--gl-cream);
+  text-decoration: underline;
+}
+
+/* 4. BUTTONS */
+.btn-call {
+  background-color: var(--gl-cream);
+  color: var(--gl-brown);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-call:hover {
+  background-color: #ffffff;
+  color: var(--gl-brown);
+}
+
+.btn-blu {
+  background-color: var(--gl-blu);
+  color: #ffffff;
+}
+
+.btn-library {
+  background-color: var(--gl-library);
+  color: #ffffff;
+}
+
+.btn-blu:hover,
+.btn-library:hover {
+  filter: brightness(1.15);
+  color: #ffffff;
+}
+
+/* 5. FOOTER */
+footer {
+  background-color: var(--gl-brown);
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+footer h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #ffffff;
 }
